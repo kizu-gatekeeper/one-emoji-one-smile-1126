@@ -11,7 +11,7 @@ MAX_CHARS = 8
 
 
 def main() -> None:
-    # Validate the entry format before writing anything.
+    # Check the entry is a single emoji and within the limit before writing it.
     assert "\n" not in ENTRY, "entry must be a single line"
     assert len(ENTRY) == 1, "entry must be exactly one emoji"
     assert ENTRY.strip(), "entry must not be blank"
